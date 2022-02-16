@@ -16,7 +16,7 @@ equalBtn.addEventListener("click", () => {
     }
     else {
         let result = eval(screen.value);
-        // added this to that the result is never more than 3 decimal degits
+        // added this to that the result is never more than 3 decimal digits
         screen.value = parseFloat(result).toFixed(3);
     }
 });
