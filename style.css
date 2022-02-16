@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    flex: 0 0 95%;
+}
+
+.screen{
+    width: 100%;
+    font-size: 6rem;
+    background: rgb(41,41,56);
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+}
+
+.buttons{
+    /* without flex they stay in the same line and dont take the full assigned space */
+    display: flex; 
+    /* flex:wrap makes them wrap when the buttons are outside the given space making it a row desgin */
+    flex-wrap: wrap;
+    transition: all 0.2s ease-in-out;
+}
+
+button{
+    /* 0 0 25% is imp cz then it makes a 4 row design and stretches to the end of the input box */
+    flex: 0 0 25%;
+    padding: 0.25rem;
+    border: 1px solid #000;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover{
+    background: rgb(102, 102, 231);
+}
+
+.btn-yellow{
+    background: rgb(245,146,62);
+    color: #fff;
+}
+.btn-grey{
+    background: rgb(244,244,244);
+}
+
+.btn,.btn-grey,.btn-clear{
+    font-size: 4rem;
+}
+
+.btn-clear{
+    background: #ff0000;
+}
+
+.btn-equal{
+    background: #19ff05;
+}
